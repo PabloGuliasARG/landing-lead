@@ -1,0 +1,9 @@
+[build]
+  publish = "public"
+  functions = "netlify/functions"
+
+# /gracias muestra gracias.html
+[[redirects]]
+  from = "/gracias"
+  to = "/gracias.html"
+  status = 200

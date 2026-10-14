@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>¡Listo! — Sweet Talles Reales</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#C8102E">
+<style>
+  :root{
+    --rojo:#C8102E; --rojo-osc:#9E0C24; --rosa:#C9989A; --rosa-claro:#F3E3E1;
+    --texto:#2B1A1C; --suave:#6E5153; --blanco:#FFFFFF; --radio:14px;
+    --serif:"Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif;
+    --sans:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  }
+  *,*::before,*::after{box-sizing:border-box}
+  body{margin:0;min-height:100vh;display:flex;flex-direction:column;background:var(--blanco);color:var(--texto);font:17px/1.55 var(--sans)}
+  :focus-visible{outline:3px solid var(--texto);outline-offset:3px;border-radius:4px}
+  .cinta{height:34px;position:relative;
+    background:
+      repeating-linear-gradient(90deg,var(--texto) 0 2px,transparent 2px 50px) 0 0/100% 18px no-repeat,
+      repeating-linear-gradient(90deg,var(--texto) 0 1px,transparent 1px 10px) 0 0/100% 9px no-repeat,
+      var(--rosa-claro);
+    border-bottom:2px solid var(--rojo)}
+  .cinta::after{content:"";position:absolute;top:0;bottom:0;right:0;width:4px;background:var(--rojo)}
+  .wrap{max-width:560px;margin:0 auto;padding:0 20px;width:100%}
+  header{padding:18px 0 0}
+  .logo{font-family:var(--serif);font-size:20px;color:var(--rojo);font-weight:700}
+  .logo span{font-family:var(--sans);font-weight:500;font-size:12px;letter-spacing:.18em;text-transform:uppercase;display:block;color:var(--suave)}
+  main{flex:1;display:flex;align-items:center;padding:30px 0 48px}
+  .medida{font-size:13px;font-weight:700;letter-spacing:.12em;color:var(--rojo);text-transform:uppercase;margin:0 0 8px}
+  h1{font-family:var(--serif);font-size:clamp(34px,10vw,50px);line-height:1.05;margin:0 0 18px}
+  .caja{background:var(--rosa-claro);border:2px solid var(--rojo);border-radius:var(--radio);padding:18px;margin:0 0 30px;box-shadow:6px 6px 0 var(--rosa)}
+  .caja p{margin:0 0 10px}
+  .caja p:last-child{margin:0}
+  strong{color:var(--rojo-osc)}
+  .cta{display:flex;align-items:center;justify-content:center;gap:10px;text-decoration:none;font-weight:700;font-size:18px;
+    background:var(--rojo);color:#fff;border-radius:12px;padding:18px 20px;min-height:60px}
+  .cta:hover{background:var(--rojo-osc)}
+  .cta svg{width:24px;height:24px;flex:none}
+  .sub{font-size:14px;color:var(--suave);text-align:center;margin:10px 0 0}
+</style>
+</head>
+<body>
+<div class="cinta" aria-hidden="true"></div>
+<header><div class="wrap">
+  <!-- CAMBIAR: logo -->
+  <div class="logo">Sweet<span>talles reales</span></div>
+</div></header>
+
+<main><div class="wrap">
+  <p class="medida">Medida tomada ✓</p>
+  <h1>¡Listo, ya estás adentro!</h1>
+
+  <div class="caja">
+    <p>En los próximos minutos te llega al mail la guía para medir tus prendas.</p>
+    <p><strong>¿No la ves?</strong> Revisá las carpetas <strong>Promociones</strong> o <strong>Spam</strong> y movela a <strong>Principal</strong>, así no te perdés lo que sigue.</p>
+  </div>
+
+  <!-- CAMBIAR: tu usuario de Instagram -->
+  <a class="cta" href="https://instagram.com/sweettallesreales">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+    Seguinos en Instagram
+  </a>
+  <p class="sub">Looks reales, talles reales, todos los días.</p>
+</div></main>
+</body>
+</html>
