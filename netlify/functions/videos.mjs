@@ -123,7 +123,7 @@ const listado = () => {
     `<div class="wrap">
   <p class="medida">Medida tomada ✓</p>
   <h1>Cómo medir correctamente</h1>
-  <p class="intro">Mirá los videos en orden. Podés volver a esta página cuando quieras desde este mismo dispositivo.</p>
+  <p class="intro">Mirá los videos en orden. Podés volver a esta página cuando quieras.</p>
   ${items}
 </div>`
   );
@@ -150,7 +150,7 @@ const conAcceso = (valor) => ({
 
 export default async (req) => {
   const CLAVE = (process.env.VIDEOS_CLAVE || "").trim();
-  if (!CLAVE) return html(login("La página todavía no está configurada."), 503);
+  return html(listado()); // Sin clave: los videos se ven directo
   const valor = ficha(CLAVE);
   const url = new URL(req.url);
 
